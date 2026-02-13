@@ -8,6 +8,40 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Scaffold</title>
+
+    <style>
+        #services h1::after {
+            content: "";
+            display:block;
+            width: 60px;
+            height: 3px;
+            background-color: #009cea;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        #portfolio h1::after {
+            content: "";
+            display:block;
+            width: 60px;
+            height: 3px;
+            background-color: #009cea;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .portfolio-categories ul li{
+            list-style: none;
+            margin: 30px;
+        }
+        .overlay-item-buttons{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
 </head>
 
 <body>
@@ -96,18 +130,84 @@
             <div class="about-info">
                 <div class="about-title">
                     <h3>Who We Are</h3>
-                    <h1>Expedita voluptas omnis cupiditate totam eveniet nobis sint iste. Dolores est repellat corrupti reprehenderit.</h1>
+                    <h1>Expedita voluptas omnis cupiditate totam eveniet nobis sint iste. Dolores est repellat corrupti
+                        reprehenderit.</h1>
                 </div>
                 <div class="about-desc">
-                    <p>Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt et. Inventore et et dolor consequatur itaque ut voluptate sed et. Magnam nam ipsum tenetur suscipit voluptatum nam et est corrupti.</p>
+                    <p>Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt et. Inventore et et dolor
+                        consequatur itaque ut voluptate sed et. Magnam nam ipsum tenetur suscipit voluptatum nam et est
+                        corrupti.</p>
                 </div>
                 <div class="about-button">
-                    <a href="" style="display: inline-block; width: 80px; background-color: #009cea; text-decoration: none; padding: 10px; border-radius: 5px; color:white;"><i class="fa-solid fa-chevron-right"></i> Read More</a>
+                    <a href=""
+                        style="display: inline-block; width: 80px; background-color: #009cea; text-decoration: none; padding: 10px; border-radius: 5px; color:white;"><i
+                            class="fa-solid fa-chevron-right"></i> Read More</a>
                 </div>
             </div>
         </section>
         <!-- about end -->
-        
+
+
+        <!-- services start -->
+        <section id="services">
+            <div class="services-header" style="text-align: center;">
+                <h1>Services</h1>
+                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div>
+            <div class="services-items" style="display:flex; margin: 3px;">
+                <div class="services-item">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <h2>lorem</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, ab.</p>
+                </div>
+                <div class="services-item">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <h2>lorem</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, ab.</p>
+                </div>
+                <div class="services-item">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <h2>lorem</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, ab.</p>
+                </div>
+                <div class="services-item">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <h2>lorem</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, ab.</p>
+                </div>
+            </div>
+        </section>
+        <!-- services end -->
+
+        <!-- portfolio start -->
+        <section id="portfolio">
+            <div class="portfolio-header" style="text-align: center;">
+                <h1>Portfolio</h1>
+                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+            <div class="portfolio-categories">
+                <ul style="display:flex; justify-content: center; ">
+                    <li>All</li>
+                    <li>App</li>
+                    <li>Product</li>
+                    <li>Branding</li>
+                    <li>Books</li>
+                </ul>
+            </div>
+            <div class="portfolio-items">
+                <div class="portfolio-item" style="background-image: url(https://bootstrapmade.com/content/demo/Scaffold/assets/img/portfolio/app-1.jpg); width: 200px; height: 200px; background-size: contain; background-repeat: no-repeat; position: relative;">
+                    <div class="portfolio-overlay-item">
+                        <span>App1</span>
+                        <div class="overlay-item-buttons">
+                            <i class="fa-solid fa-magnifying-glass-arrow-right"></i>
+                            <i class="fa-solid fa-circle-info"></i>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- portfolio end -->
     </div>
 </body>
 
